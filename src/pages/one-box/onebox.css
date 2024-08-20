@@ -1,0 +1,347 @@
+.fullBackGround {
+  display: flex;
+  flex-direction: row;
+}
+
+.taskBar {
+  height: 100vh;
+  width: 48px;
+  background-color: #101113;
+  border-right: 1px solid #343a40;
+}
+
+.oneBox {
+  width: 100%;
+  width: calc(100% - 48px);
+}
+
+.mailIcon {
+  padding: 8px 12px 12px 12px;
+}
+
+.mainActions {
+  padding: 16px 8px 16px 8px;
+  height: 100%;
+  height: calc(100% - 118px);
+}
+
+.taskFooter {
+  height: 56px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 48px;
+}
+
+.userSign {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: Green;
+  color: #fff;
+}
+
+.headBar {
+  height: 64px;
+  background-color: #1f1f1f;
+  border: 1px solid #343a40;
+  border-left: 0px;
+  color: #fff;
+  padding: 24px;
+}
+
+.selectUser {
+  outline: none;
+  background-color: #1f1f1f;
+  color: #fff;
+}
+
+/* --------------------------------- toggle switch --------------------------------------- */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 51px;
+  height: 24px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #222426;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border: 1px solid #343a40;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 22px;
+  width: 22px;
+  left: 0px;
+  bottom: 0px;
+  background-color: #e9eaec;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border: 1px solid #dadee1;
+}
+
+input:checked + .slider {
+  background-color: #343a40;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #dadee1;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(27px);
+  -ms-transform: translateX(27px);
+  transform: translateX(27px);
+  background-color: #dadee1;
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+  background-color: #343a40;
+}
+
+/* ---------------------------------------------toggle switch --------------------------------- */
+
+.headBarLight {
+  height: 64px;
+  background-color: #fff;
+  border: 1px solid #343a40;
+  border-left: 0px;
+  color: #1f1f1f;
+  padding: 24px;
+}
+
+.selectUserLight {
+  outline: none;
+  background-color: #fff;
+  color: #1f1f1f;
+}
+
+.emptyInbox {
+  background-color: #000;
+  width: 100%;
+  height: 100%;
+  height: calc(100% - 64px);
+  color: #fff;
+}
+
+.emptyInboxLight {
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+  height: calc(100% - 64px);
+  color: #000;
+}
+
+.noInboxMsg1 {
+  font-weight: 700;
+  font-size: 24px;
+  color: #fff;
+}
+
+.noInboxMsg1Light {
+  font-weight: 700;
+  font-size: 24px;
+  color: #000;
+}
+
+.noInboxMsg2 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.noInboxMsg2Light {
+  font-size: 18px;
+  font-weight: 500;
+  color: #000;
+}
+
+.mailListContainer {
+  height: 100%;
+  border-right: 1px solid #33383f;
+}
+
+.actionContainer {
+  height: 100%;
+  border-right: 1px solid #33383f;
+}
+
+.feedContainer {
+  height: 100%;
+  border-right: 1px solid #33383f;
+}
+
+.listTitle {
+  color: #4285f4;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.listSearchBtn {
+  background-color: #23272c;
+  border-bottom-left-radius: large;
+  border-top-left-radius: large;
+}
+
+.listSearchBox {
+  outline: none;
+  background-color: #23272c;
+  border-bottom-right-radius: large;
+  border-top-right-radius: large;
+}
+
+.replayCount {
+  font-weight: 600;
+  font-size: 14px;
+  color: #4285f4;
+  width: 34px;
+  height: 26px;
+  background-color: #23272c;
+  border-radius: 30%;
+}
+
+.fullList {
+  border-top: 1px solid #33383f;
+}
+
+.fromMailId {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.fronDate {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.listCell {
+  border-bottom: 1px solid #33383f;
+}
+
+/* -------------------------------------------------scroll Bar ----------------------------- */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 25px;
+  border-radius: 40%;
+}
+::-webkit-scrollbar-button {
+  background: #ccc;
+}
+::-webkit-scrollbar-track-piece {
+  background: #888;
+}
+::-webkit-scrollbar-thumb {
+  background: #eee;
+}
+/* ----------------------------------------------------scroll bar ---------------------------------- */
+
+.displayDesc {
+  border-bottom: 1px solid #343a40;
+  padding: 0px 8px 0px 17px;
+}
+
+.mainFromEmail {
+  font-size: 12px;
+  font-weight: 400;
+  color: #23272c;
+}
+
+.mainFromName {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.dotBtn {
+  width: 32px;
+  height: 32px;
+}
+
+.feedHeading {
+  padding: 8px 12px 8px 12px;
+  border-radius: 8px;
+  background-color: #141517;
+  color: #fff;
+}
+
+.feedHeadingLight {
+  padding: 8px 12px 8px 12px;
+  border-radius: 8px;
+  background-color: #eceff3;
+  color: #000;
+}
+
+.feedTxt {
+  font-size: 12px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.feedTxtLight {
+  font-size: 12px;
+  font-weight: 400;
+  color: #000;
+}
+
+.txtLt {
+  color: #637381;
+}
+
+.feedCampTitle {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.lightBg {
+  background-color: #f9f9f9;
+  border: ipx solid #343a40;
+}
+
+.darkBg {
+  background-color: #141517;
+  border: ipx solid #343a40;
+}
+
+.mainHeight {
+  height: 400px;
+}
+
+.btn {
+  border: 1px solid #25262b;
+  align-items: center;
+  justify-items: center;
+}
+
+.btn:hover {
+  opacity: 70%;
+}
+
+.grdBtn {
+  background-color: #4098d3;
+  color: #fff;
+  background-image: linear-gradient(
+    90deg,
+    rgb(2, 128, 247) 0 20%,
+    blue 80% 100%
+  );
+}
